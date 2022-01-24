@@ -1,0 +1,26 @@
+/* Referencias por palabras clave  */
+
+body {
+    background-color: black;
+    color: white;
+}
+
+article {
+    background-color: hsl(44, 43%, 43%);
+}
+
+/* Referencias por clases */
+
+.resaltado { 
+    color:yellow;
+}
+
+/* Referencias por ID */
+
+#titulo_del_blog{
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
