@@ -27,3 +27,37 @@ font-size: 3rem;}
         margin-left: 1rem;
         font-style: italic;}
    
+        section{
+            /* despliegue de grid */
+            display: grid;
+            /* las 12 columnas usando repeat */
+            grid-template-columns: repeat(12, 1fr);
+            /* que cada fila ocupe su auto */
+            grid-auto-rows: auto; 
+            /* espacio entre cada elemento */
+            gap: 3rem;
+}
+/* solo header directos de section */
+section>header {
+    /* medirá 12 columnas */
+    grid-column: span 12;
+}
+
+header {
+/* igual medirá 12 */
+grid-column: span 12;
+}
+
+main { 
+    /* 8 columnas */
+    grid-column: span 8;
+}
+aside {
+/* 4 columnas */
+grid-column: span 4;
+}
+
+footer {
+    /* 12 columnas */
+    grid-column: span 12;
+}
