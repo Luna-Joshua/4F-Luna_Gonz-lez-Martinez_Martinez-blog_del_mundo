@@ -13,10 +13,23 @@ font-size: 3rem;}
     .resaltado{ color: yellow;}
    
     nav>ul>li{list-style: none;}
-    nav>ul>li>a{text-decoration: none;}
+    nav>ul>li>a{
+        text-decoration: none;
+    color: #fff;
+    }
 
     #footer_blog{
-        margin: 2rem;}
+        margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.3rem;
+
+    }
 
 .ilustracion{
     display: inline;
@@ -60,4 +73,71 @@ grid-column: span 4;
 footer {
     /* 12 columnas */
     grid-column: span 12;
+}
+
+nav{
+    font-size: 1.3rem;
+}
+
+nav>ul>li>a:hover{
+    text-decoration: underline;
+    color: greenyellow
+}
+
+nav>ul{
+    /*se despliega flex*/
+    display: flex;
+    /*elementos al centro*/
+    align-items: center;
+    /*mismo espacio entre ellos*/
+justify-content: space-around;
+/*borde inferior*/
+border-bottom: 1px solid #fff;
+/*aumentamos el espacio entre elementos y borde del <ul>*/
+padding-bottom: 0.5rem;
+}
+
+article>header>hgroup{
+    /*le desplegamos flex*/
+    display: flex;
+    /* alineamos al centro*/
+    align-items: center;
+    /*y añadimos esta propiedad*/
+    justify-content: space-between;
+}
+
+article>header>hgroup>h2{
+    /*desplegamos flez*/
+    display: flex;
+    align-items: center;
+
+}
+
+article>header>hgroup>h2>img{
+    margin-right: 1rem;
+}
+
+#footer_blog div:nth-child(2){
+    font-size: 9rem;
+}
+
+aside>h2{
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+aside>div{
+    background-color: rgb(43, 43, 44);
+}
+
+aside>div>img{
+    background-color: rgb(80, 55, 225);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+aside>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
