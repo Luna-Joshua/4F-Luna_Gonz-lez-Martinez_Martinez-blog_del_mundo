@@ -110,12 +110,10 @@ section {
 
 section>header{
     grid-column: span 12;
-    background-color: brown;
+    
 }
 
-main{
-    grid-column: span 12;
-}
+
 
 @media (min-width:1024.1px) {
 main{
